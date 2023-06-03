@@ -16,6 +16,12 @@ var server = app.listen(8081, function () {
   console.log("Example app listening at http://%s:%s", host, port);
 });
 
+//
+//Send All Request To Router
+// var routes = require(appRoot + '/App/routes/router');
+// routes(app);
+
+///
 // var express = require('express');
 // var app = express();
 // var fs = require("fs");
