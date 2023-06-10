@@ -1,8 +1,20 @@
 // npm init -y
+//npm i express
+//npm i jsonwebtoken
 var express = require("express");
 var app = express();
 var fs = require("fs");
+//jwt
+// const { signIn, welcome, refresh } = require("./handlers")
 
+// const app = express()
+// app.use(bodyParser.json())
+// app.use(cookieParser())
+
+// app.post("/signin", signIn)
+// app.get("/welcome", welcome)
+// app.post("/refresh", refresh)
+//end jwt
 app.get("/listUsers", function (req, res) {
   fs.readFile(__dirname + "/" + "users.json", "utf8", function (err, data) {
     console.log(data);
